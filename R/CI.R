@@ -2,6 +2,7 @@
 #'
 #' This function creates a confidence interval.
 #' Methods include "t" or "z".
+#' @export
 CI <- function(point, SE, df, level = .95, method = "t"){
      if(method == "t"){
           precision <- qt(level+(1-level)/2, df) * SE
