@@ -1,6 +1,6 @@
 Package: a3personal
 Title: My personal functions
-Version: 1.0.6
+Version: 1.0.7
 Authors@R: Allen Litvak
 Description: Fucntions for personal use, mostly chemistry and statistics.
 License: AGPL (>= 3)
