@@ -6,13 +6,24 @@
 \usage{
 constants(x)
 }
+\arguments{
+\item{x}{name of constant}
+}
 \description{
 This function loads a constant.
-Constants include:
-h (J\emph{m)
-c (m/s)
-e
-R (J/(k}m))
-An
-F (C/mol)
 }
+\section{Constants}{
+
+\itemize{
+\item{"h"}{ --- Planck constant (J\*m)}
+\item{"c"}{ --- speed of light in a vaccum (m/s)}
+\item{"e"}{ --- Euler number}
+\item{"R"}{ --- ideal gas constant (J/(k\\emph{m))}
+\item{"me"}{ --- mass of an electron (kg)}
+\item{"F"}{ --- Faraday constant (C/mol)}
+\item{"An"}{ --- Avogadro number}
+\item{"Rh"}{ --- Rydbherg for hjydrogen (1/m)}
+\item{"Cw"}{ --- molar heat capacity of water (J/(mol}K))}
+}
+}
+

@@ -7,5 +7,5 @@
 pH.approx(Ka.base, Ka.exp, conc)
 }
 \description{
-This function approximates the pH of a solution whre loss of base is negligible.
+This function approximates the pH of a solution where change in [base]\ is negligible.
 }

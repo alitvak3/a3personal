@@ -1,15 +1,23 @@
-#' Probability between
+#' Probability Between
 #'
-#' This fucntion calculates probability between two qauntiles.
-#' Method can be set to "norm" for normal, "pois" for Poisson, "binom" for binomial, or "t" for t.
-pbetween <- function(q1, q2, m = 0, s = 1, l, size, p, df, method = "nomral"){
-     if(method == "norm"){
-          pnorm(q2, m, s)-pnorm(q1, m, s)
-     } else if(method == "pois"){
-          ppois(q2, l)-ppois(q1, l)
-     } else if(method =="binom"){
-          pbinom(q2, size, p)-pbinom(q1, size, p)
-     } else if(method =="t"){
-          pt(q2, df)-pbinom(q1, df)
-     }
+#' This function calculates probability between two qauntiles.
+#' @export
+#' @describeIn pbetween Normal
+pbetween.norm <- function(q1, q2, mean = 0, sd = 1){
+     pnorm(q2, m, s)-pnorm(q1, m, s)
+}
+
+#' @describeIn pbetween Poisson
+pbetween.pois <- function(q1, q2, l){
+     ppois(q2, l)-ppois(q1, l)
+}
+
+#' @describeIn pbetween Student's t
+pbetween.t <- function(q1, q2, df){
+     pt(q2, df)-pbinom(q1, df)
+}
+
+#' @describeIn pbetween Binomial
+pbetween.binom <- function(q1, q2, size, prob){
+     pbinom(q2, size, p)-pbinom(q1, size, p)
 }
