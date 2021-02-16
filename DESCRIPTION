@@ -1,7 +1,7 @@
 Package: a3personal
 Title: My personal functions
 Version: 1.0.7
-Authors@R: person("Allen", "Litvak", role = "cre")
+Authors@R: person("Allen", "Litvak", role = "cre", email = "alitvak3@protonmail.com")
 Description: Fucntions for personal use, mostly chemistry and statistics.
 License: AGPL (>= 3)
 Encoding: UTF-8
