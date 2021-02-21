@@ -4,7 +4,7 @@
 #' @export
 #' @describeIn pbetween Normal
 pbetween.norm <- function(q1, q2, mean = 0, sd = 1){
-     pnorm(q2, m, s)-pnorm(q1, m, s)
+     pnorm(q2, mean, sd)-pnorm(q1, mean, sd)
 }
 #' @export
 #' @describeIn pbetween Poisson
@@ -19,5 +19,5 @@ pbetween.t <- function(q1, q2, df){
 #' @export
 #' @describeIn pbetween Binomial
 pbetween.binom <- function(q1, q2, size, prob){
-     pbinom(q2, size, p)-pbinom(q1, size, p)
+     pbinom(q2, size, prob)-pbinom(q1, size, prob)
 }
