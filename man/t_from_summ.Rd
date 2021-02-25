@@ -6,11 +6,11 @@
 \usage{
 t_from_summ(
   m1,
-  m2,
   s1,
-  s2,
   n1,
-  n2,
+  m2 = NULL,
+  n2 = NULL,
+  s2 = NULL,
   alternative = c("two.sided", "less", "greater"),
   mu = 0,
   paired = FALSE,
@@ -22,15 +22,15 @@ t_from_summ(
 \arguments{
 \item{m1}{mean of x}
 
-\item{m2}{mean of y}
-
 \item{s1}{standard deviation of x}
-
-\item{s2}{standard deviation of y}
 
 \item{n1}{number of observations in x}
 
+\item{m2}{mean of y}
+
 \item{n2}{number of observations in y}
+
+\item{s2}{standard deviation of y}
 }
 \description{
 This is the t.test fucntion from the stats package adapted to work from summary statistics instead of vectors.
