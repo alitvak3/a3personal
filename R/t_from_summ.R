@@ -8,7 +8,7 @@
 #' @param n1 number of observations in x
 #' @param n2 number of observations in y
 #' @export
-t_from_summ <- function (m1, m2, s1, s2, n1, n2, alternative = c("two.sided", "less",
+t_from_summ <- function (m1, s1, n1, m2 = NULL, n2 = NULL, s2 = NULL, alternative = c("two.sided", "less",
                                        "greater"), mu = 0, paired = FALSE, var.equal = FALSE, conf.level = 0.95,
           ...)
 {

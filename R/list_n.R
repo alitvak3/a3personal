@@ -6,4 +6,5 @@
 list_n <- function(x = 1:100){
      l <- as.list(x)
      names(l) <- factor(x)
+     return(l)
 }
