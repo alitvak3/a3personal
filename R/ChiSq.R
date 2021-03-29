@@ -51,7 +51,7 @@ ChiSq.Bins <- function(bin.bounds,
 #' @describeIn ChiSq Chi-Square for Binned Data
 ChiSq.pois <- function(counts,
                        ObsFreq,
-                       lambda = counts * ObsFreq / ObsFreq,
+                       lambda = sum(counts * ObsFreq) / sum(ObsFreq),
                        boundary = c("neither", "greater", "less"),
                        df = length(ObsFreq) - 1){
      boundary <- match.arg(boundary)
@@ -69,8 +69,7 @@ ChiSq.pois <- function(counts,
      ChiSq <- (ObsFreq - nExp)^2/nExp
      results <- list(
           Table = tibble(
-               Lower,
-               Upper,
+               counts,
                ObsFreq,
                ExpRelFreq = rExp,
                ExpFreq = nExp, ChiSq
