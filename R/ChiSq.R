@@ -51,8 +51,8 @@ ChiSq.Bins <- function(bin.bounds,
 #' @describeIn ChiSq Chi-Square for Binned Data
 ChiSq.pois <- function(counts,
                        ObsFreq,
-                       lambda = counts * freqs / freqs,
-                       boundary = c("greater", "less", "neither"),
+                       lambda = counts * ObsFreq / ObsFreq,
+                       boundary = c("neither", "greater", "less"),
                        df = length(ObsFreq) - 1){
      boundary <- match.arg(boundary)
      rExp <- dpois(counts, lambda)
