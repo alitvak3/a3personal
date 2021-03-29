@@ -17,8 +17,8 @@ ChiSq.Bins(
 ChiSq.pois(
   counts,
   ObsFreq,
-  lambda = counts * freqs/freqs,
-  boundary = c("greater", "less", "neither"),
+  lambda = counts * ObsFreq/ObsFreq,
+  boundary = c("neither", "greater", "less"),
   df = length(ObsFreq) - 1
 )
 }
