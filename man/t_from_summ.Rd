@@ -6,8 +6,8 @@
 \usage{
 t_from_summ(
   m1,
-  s1,
   n1,
+  s1,
   m2 = NULL,
   n2 = NULL,
   s2 = NULL,
@@ -22,9 +22,9 @@ t_from_summ(
 \arguments{
 \item{m1}{mean of x}
 
-\item{s1}{standard deviation of x}
-
 \item{n1}{number of observations in x}
+
+\item{s1}{standard deviation of x}
 
 \item{m2}{mean of y}
 

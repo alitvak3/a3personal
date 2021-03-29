@@ -3,12 +3,12 @@
 #' This is the t.test fucntion from the stats package adapted to work from summary statistics instead of vectors.
 #' @param m1 mean of x
 #' @param m2 mean of y
-#' @param s1 standard deviation of x
-#' @param s2 standard deviation of y
 #' @param n1 number of observations in x
 #' @param n2 number of observations in y
+#' @param s1 standard deviation of x
+#' @param s2 standard deviation of y
 #' @export
-t_from_summ <- function (m1, s1, n1, m2 = NULL, n2 = NULL, s2 = NULL, alternative = c("two.sided", "less",
+t_from_summ <- function (m1, n1, s1, m2 = NULL, n2 = NULL, s2 = NULL, alternative = c("two.sided", "less",
                                        "greater"), mu = 0, paired = FALSE, var.equal = FALSE, conf.level = 0.95,
           ...)
 {
